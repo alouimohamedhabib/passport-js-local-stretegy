@@ -8,9 +8,8 @@ module.exports = function() {
       password,
       done
     ) {
-    
       User.findOne({ email: email }, function(err, user) {
-          console.log(user)
+        console.log(user);
         if (err) {
           return done(err);
         }
